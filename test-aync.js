@@ -17,23 +17,23 @@ fun2();
 
 // CALLBACK FUNCTION
 
-// const fun1 = (request, callback) => {
-//   console.log(request);
-//   setTimeout(() => {
-//     return callback("hey", "yo");
-//   }, 1000);
-//   console.log("end");
-// };
+const fun1 = (request, callback) => {
+  console.log(request);
+  setTimeout(() => {
+    return callback("hey", "yo");
+  }, 1000);
+  console.log("end");
+};
 
-// const fun2 = () => {
-//   fun1("yo", (x, y) => {
-//     console.log(x);
-//     console.log(y);
-//   });
-//   console.log("END");
-// };
+const fun2 = () => {
+  fun1("yo", (x, y) => {
+    console.log(x);
+    console.log(y);
+  });
+  console.log("END");
+};
 
-// fun2();
+fun2();
 
 // const func1 = (t) => {
 //   setTimeout(() => {
