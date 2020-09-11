@@ -71,21 +71,21 @@ fun2()
   });
 
 // ASYNC / AWAIT
-// const fun0 = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("hey");
-//       let err = false;
-//       if (!err) resolve();
-//       else reject("some error");
-//     }, 1000);
-//   });
-// };
-// function fun2() {
-//   setTimeout(() => {
-//     console.log("fun2");
-//   }, 2000);
-// }
+const fun0 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("hey");
+      let err = false;
+      if (!err) resolve();
+      else reject("some error");
+    }, 1000);
+  });
+};
+function fun2() {
+  setTimeout(() => {
+    console.log("fun2");
+  }, 2000);
+}
 // async function fun1() {
 //   console.log("start");
 //   fun0()
