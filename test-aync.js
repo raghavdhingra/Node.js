@@ -86,13 +86,13 @@ function fun2() {
     console.log("fun2");
   }, 2000);
 }
-// async function fun1() {
-//   console.log("start");
-//   fun0()
-//     .catch((err) => console.log(err))
-//     .then(() => {
-//       console.log("end");
-//     });
-// }
+async function fun1() {
+  console.log("start");
+  fun0()
+    .catch((err) => console.log(err))
+    .then(() => {
+      console.log("end");
+    });
+}
 
-// fun1();
+fun1();
