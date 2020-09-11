@@ -13,7 +13,7 @@ const fun2 = () => {
   console.log(val);
 };
 
-// fun2();
+fun2();
 
 // CALLBACK FUNCTION
 
