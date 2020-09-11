@@ -35,19 +35,19 @@ const fun2 = () => {
 
 fun2();
 
-// const func1 = (t) => {
-//   setTimeout(() => {
-//     return console.log(t);
-//   }, 1000);
-// };
+const func1 = (t) => {
+  setTimeout(() => {
+    return console.log(t);
+  }, 1000);
+};
 
-// const func2 = (t, callback) => {
-//   setTimeout(() => {
-//     callback(t);
-//   }, 2000);
-// };
+const func2 = (t, callback) => {
+  setTimeout(() => {
+    callback(t);
+  }, 2000);
+};
 
-// func2("yo", func1);
+func2("yo", func1);
 
 // PROMISES
 
