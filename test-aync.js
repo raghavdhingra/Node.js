@@ -1,74 +1,74 @@
-// NORMAL FUNCTION
+// // NORMAL FUNCTION
 
-const fun1 = () => {
-  setTimeout(() => {
-    return 1;
-  }, 2000);
-};
+// const fun1 = () => {
+//   setTimeout(() => {
+//     return 1;
+//   }, 2000);
+// };
 
-const fun2 = () => {
-  let val = 0;
-  console.log(val);
-  val = fun1();
-  console.log(val);
-};
+// const fun2 = () => {
+//   let val = 0;
+//   console.log(val);
+//   val = fun1();
+//   console.log(val);
+// };
 
-fun2();
+// fun2();
 
-// CALLBACK FUNCTION
+// // CALLBACK FUNCTION
 
-const fun1 = (request, callback) => {
-  console.log(request);
-  setTimeout(() => {
-    return callback("hey", "yo");
-  }, 1000);
-  console.log("end");
-};
+// const fun1 = (request, callback) => {
+//   console.log(request);
+//   setTimeout(() => {
+//     return callback("hey", "yo");
+//   }, 1000);
+//   console.log("end");
+// };
 
-const fun2 = () => {
-  fun1("yo", (x, y) => {
-    console.log(x);
-    console.log(y);
-  });
-  console.log("END");
-};
+// const fun2 = () => {
+//   fun1("yo", (x, y) => {
+//     console.log(x);
+//     console.log(y);
+//   });
+//   console.log("END");
+// };
 
-fun2();
+// fun2();
 
-const func1 = (t) => {
-  setTimeout(() => {
-    return console.log(t);
-  }, 1000);
-};
+// const func1 = (t) => {
+//   setTimeout(() => {
+//     return console.log(t);
+//   }, 1000);
+// };
 
-const func2 = (t, callback) => {
-  setTimeout(() => {
-    callback(t);
-  }, 2000);
-};
+// const func2 = (t, callback) => {
+//   setTimeout(() => {
+//     callback(t);
+//   }, 2000);
+// };
 
-func2("yo", func1);
+// func2("yo", func1);
 
-// PROMISES
+// // PROMISES
 
-const fun2 = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("hey1");
-      const err = true;
-      if (!err) resolve({ data: "Some data", status: 200 });
-      else reject({ error: "Something Wrong Happened", status: 500 });
-    }, 2000);
-  });
-};
+// const fun2 = () => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("hey1");
+//       const err = true;
+//       if (!err) resolve({ data: "Some data", status: 200 });
+//       else reject({ error: "Something Wrong Happened", status: 500 });
+//     }, 2000);
+//   });
+// };
 
-fun2()
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// fun2()
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 // ASYNC / AWAIT
 const fun0 = () => {
