@@ -1,17 +1,17 @@
 // NORMAL FUNCTION
 
-// const fun1 = () => {
-//   setTimeout(() => {
-//     return 1;
-//   }, 2000);
-// };
+const fun1 = () => {
+  setTimeout(() => {
+    return 1;
+  }, 2000);
+};
 
-// const fun2 = () => {
-//   let val = 0;
-//   console.log(val);
-//   val = fun1();
-//   console.log(val);
-// };
+const fun2 = () => {
+  let val = 0;
+  console.log(val);
+  val = fun1();
+  console.log(val);
+};
 
 // fun2();
 
