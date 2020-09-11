@@ -51,24 +51,24 @@ func2("yo", func1);
 
 // PROMISES
 
-// const fun2 = () => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       console.log("hey1");
-//       const err = true;
-//       if (!err) resolve({ data: "Some data", status: 200 });
-//       else reject({ error: "Something Wrong Happened", status: 500 });
-//     }, 2000);
-//   });
-// };
+const fun2 = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("hey1");
+      const err = true;
+      if (!err) resolve({ data: "Some data", status: 200 });
+      else reject({ error: "Something Wrong Happened", status: 500 });
+    }, 2000);
+  });
+};
 
-// fun2()
-//   .then((data) => {
-//     console.log(data);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+fun2()
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // ASYNC / AWAIT
 // const fun0 = () => {
